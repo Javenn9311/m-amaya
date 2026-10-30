@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="M Amaya, Southbay Penang">
+<meta property="og:image" content="img/aerial.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+<title>M Amaya Southbay</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="M Amaya by Mah Sing: freehold sea-view serviced residences in Southbay, Batu Maung, Penang. 721 to 1,432 sq ft. Book a viewing with Javenn Lim, FLP Realty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: a dusk-lit scroll down one tower — full-bleed imagery alternating with narrow reading columns on a warm night ground, Kumiko lattice as the recurring texture. */
+:root{
+  --night:#faebd7;      /* page ground: antique white */
+  --panel:#f4e3c8;      /* alternate bands: champagne */
+  --panel-2:#efd9b9;
+  --sand:#3b2a1e;       /* primary text: dark brown */
+  --dust:#76614c;       /* secondary text */
+  --line:rgba(59,42,30,.16);
+  --gold:#94643a;       /* bronze: labels, icons, outlines */
+  --gold-soft:rgba(148,100,58,.12);
+  --clay:#b0563a;       /* terracotta: main buttons, from the Kumiko facade */
+  --ink-on-gold:#fff8ee;
+  --on-photo:#fdf6ea;
+  --f-display:"Cormorant","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --f-body:"Jost","Avenir Next","Segoe UI",Helvetica,Arial,sans-serif;
+  --gut:max(22px, env(safe-area-inset-left, 0px));
+  --gut-r:max(22px, env(safe-area-inset-right, 0px));
+  --indent:clamp(6px,3.2vw,52px);
+  --wrap:1180px;
+  --fade:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 10%,#000 90%,transparent 100%);
+  color-scheme:light;
+}
+.fade,.collage figure,.slide .frame,.vpic,.map{-webkit-mask-image:var(--fade);mask-image:var(--fade);-webkit-mask-composite:source-in;mask-composite:intersect}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-variant-numeric:lining-nums;margin:0;background:var(--night);color:var(--sand);font-family:var(--f-body);font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.005em}
+h2{font-size:clamp(34px,5.2vw,58px)}
+h3{font-size:clamp(24px,2.6vw,30px)}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+.band{padding-block:clamp(44px,4.6vw,64px)}
+.alt{background:var(--panel)}
+.eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--dust);max-width:58ch}
+.head{display:grid;gap:14px;margin-bottom:clamp(26px,3.6vw,42px)}
+.head.center{text-align:center;justify-items:center}
+.kumiko{position:relative;isolation:isolate}
+.kumiko::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.07;pointer-events:none;
+  background-image:repeating-linear-gradient(0deg,var(--gold) 0 1px,transparent 1px 36px),repeating-linear-gradient(60deg,var(--gold) 0 1px,transparent 1px 36px),repeating-linear-gradient(120deg,var(--gold) 0 1px,transparent 1px 36px);
+  -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 50% 40%,#000 0%,transparent 70%)}
+.note{font-size:13px;color:var(--dust);letter-spacing:.02em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;text-decoration:none;font-weight:500;font-size:15.5px;letter-spacing:.02em;border:1px solid var(--gold);cursor:pointer;transition:transform .25s ease,background .25s ease,color .25s ease}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-gold{background:var(--clay);border-color:var(--clay);color:var(--ink-on-gold)}
+.btn-gold:hover{background:#97462d}
+.btn-line{background:transparent;color:var(--gold)}
+.btn-line:hover{background:var(--gold-soft)}
+.btn:active{transform:scale(.98)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* hero */
+.hero{position:relative;min-height:min(86svh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:18% 50%;transform-origin:30% 60%;animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.14) translate3d(-1.5%,-1%,0)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,14,.5) 0%,rgba(40,26,14,0) 20%,rgba(250,235,215,0) 34%,rgba(250,235,215,.78) 60%,var(--night) 86%),linear-gradient(90deg,rgba(250,235,215,.4),rgba(250,235,215,0) 52%)}
+.hero-top{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding-top:calc(18px + env(safe-area-inset-top,0px));padding-left:var(--gut);padding-right:var(--gut-r)}
+.hero-top{color:var(--on-photo);text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.mark{display:flex;align-items:baseline;gap:10px;font-family:var(--f-body);font-weight:400;letter-spacing:.32em;font-size:13px;text-transform:uppercase}
+.mark b{font-family:var(--f-display);font-weight:500;font-size:30px;letter-spacing:0;color:var(--on-photo)}
+.hero-top a{font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--on-photo);border-bottom:1px solid var(--on-photo);padding-bottom:3px}
+.hero-body{position:relative;z-index:2;width:100%;padding-block:120px 64px}
+.hero h1{font-size:clamp(68px,13vw,168px);font-weight:400;line-height:.88;letter-spacing:-.02em}
+.hero h1 span{display:block;font-size:.28em;letter-spacing:.42em;text-transform:uppercase;font-family:var(--f-body);font-weight:300;color:var(--gold);margin:0 0 18px 4px;line-height:1.2}
+.hero .lead{color:var(--sand);opacity:.9;margin-top:22px;max-width:46ch;font-size:clamp(17px,1.9vw,21px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 30px}
+.chip{border:1px solid var(--line);background:rgba(250,235,215,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:7px 14px;border-radius:999px;font-size:14px;letter-spacing:.03em}
+.chip b{color:var(--gold);font-weight:500}
+.hero-in>*{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.hero-in>*:nth-child(2){animation-delay:.12s}.hero-in>*:nth-child(3){animation-delay:.24s}.hero-in>*:nth-child(4){animation-delay:.36s}
+@media (max-width:520px){.hero h1 span{letter-spacing:.26em;font-size:.24em}.plan-info{align-items:start}}
+@keyframes rise{from{transform:translateY(26px);opacity:.15}to{transform:none;opacity:1}}
+
+/* glance */
+.glance{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(6,1fr)}
+.stat{padding:28px 18px;border-left:1px solid var(--line);display:grid;gap:4px;align-content:start}
+.stat:first-child{border-left:0}
+.stat strong{font-family:var(--f-display);font-weight:500;font-size:clamp(34px,4vw,46px);line-height:1;color:var(--sand);font-variant-numeric:tabular-nums}
+.stat strong small{font-size:.45em;color:var(--gold);margin-left:3px;letter-spacing:.04em}
+.stat span{font-size:13.5px;color:var(--dust);line-height:1.4}
+@media (max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(4){border-left:0}.stat:nth-child(n+4){border-top:1px solid var(--line)}}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}.stat{border-left:0;border-top:1px solid var(--line)}.stat:nth-child(even){border-left:1px solid var(--line)}.stat:nth-child(-n+2){border-top:0}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.why li{list-style:none;background:var(--night);padding:30px 26px 32px;display:grid;gap:10px;align-content:start;transition:background .3s}
+.why li:hover{background:var(--panel)}
+.why ul{display:contents}
+.ico{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);margin-bottom:6px}
+.ico svg{width:22px;height:22px}
+.why h3{font-size:26px}
+.why p{color:var(--dust);font-size:15.5px}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.why{grid-template-columns:1fr}}
+
+/* design */
+.design{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.design-copy{display:grid;gap:22px;min-width:0}
+.design-copy .tags{display:flex;gap:10px;flex-wrap:wrap}
+.tag{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);border:1px solid rgba(201,118,77,.45);padding:6px 12px;border-radius:2px}
+.collage{display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:auto auto;gap:14px;min-width:0}
+.collage figure{margin:0;overflow:hidden;position:relative;background:var(--panel)}
+.collage img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform}
+.collage .c1{grid-row:span 2;aspect-ratio:3/4.3}
+.collage .c2,.collage .c3{aspect-ratio:1/1}
+@media (max-width:860px){.design{grid-template-columns:1fr}}
+
+/* tracks (galleries) */
+.track{position:relative;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.stage{position:relative;perspective:1600px;overflow:hidden;padding-block:10px}
+.slides{position:relative;margin:0 auto;transform-style:preserve-3d}
+.slide{position:absolute;inset:0;margin:0;transition:transform .7s cubic-bezier(.2,.75,.2,1),opacity .7s ease,filter .7s ease;cursor:pointer;will-change:transform}
+.slide img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.slide .frame{position:absolute;inset:0;overflow:hidden;background:var(--panel)}
+.slide.fit .frame{background:#ebdcc6}
+.slide.fit img{object-fit:contain;padding:10% 9%}
+.slide.fit.haslab img{padding:21% 11% 11%}
+.slide figcaption{color:var(--on-photo);position:absolute;left:9%;right:9%;bottom:12%;padding:0;text-shadow:0 2px 14px rgba(0,0,0,.85),0 0 2px rgba(0,0,0,.6);font-family:var(--f-display);font-size:clamp(20px,2.4vw,28px);line-height:1.15;transition:opacity .4s}
+.slide figcaption small{display:block;font-family:var(--f-body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#f1d3a4;margin-bottom:4px}
+.slide:not(.is-on) figcaption{opacity:0}
+.orbit .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(12,10,7,.55));pointer-events:none}
+.slide.fit .frame::after{display:none}
+.lab{position:absolute;left:11%;top:10.5%;z-index:2;display:grid;gap:2px;color:#2a1f12;pointer-events:none}
+.lab b{font-family:var(--f-display);font-weight:600;font-size:clamp(22px,3vw,36px);line-height:1}
+.lab span{font-size:clamp(10.5px,1.1vw,13px);letter-spacing:.16em;text-transform:uppercase;color:#7a5a36}
+.ctrl{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:22px}
+.arrow{width:50px;height:50px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold);display:grid;place-items:center;cursor:pointer;transition:background .25s}
+.arrow:hover{background:var(--gold-soft)}
+.arrow svg{width:20px;height:20px}
+.count{font-size:14px;letter-spacing:.2em;color:var(--dust);min-width:64px;text-align:center;font-variant-numeric:tabular-nums}
+.hint{text-align:center;margin-top:10px}
+
+/* views */
+.views{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.vtabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.vtab{border:1px solid var(--line);background:transparent;padding:12px 8px;border-radius:4px;cursor:pointer;display:grid;gap:2px;text-align:center;transition:border-color .25s,background .25s}
+.vtab b{font-family:var(--f-display);font-weight:500;font-size:22px;line-height:1}
+.vtab span{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dust)}
+.vtab[aria-selected="true"]{border-color:var(--gold);background:var(--gold-soft)}
+.vtab[aria-selected="true"] b{color:var(--gold)}
+.vpic{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--panel);border-radius:2px;cursor:zoom-in}
+.vpic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .8s ease,transform 6s ease}
+.vpic img:not(.on){opacity:0}
+.vpic img.on{transform:scale(1.05)}
+.vpic .badge{position:absolute;left:9%;top:12%;z-index:2;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;background:rgba(40,26,14,.7);color:var(--on-photo);padding:6px 10px;border-radius:2px}
+.vinfo{display:grid;gap:16px;min-width:0}
+.vinfo h3{font-size:clamp(28px,3.4vw,40px)}
+.faces{display:flex;gap:8px;flex-wrap:wrap}
+.faces span{font-size:14px;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+.faces span b{color:var(--gold);font-weight:500}
+.linkbtn{background:none;border:0;padding:0;color:var(--gold);text-decoration:underline;text-underline-offset:4px;cursor:pointer;font-size:15px;justify-self:start}
+@media (max-width:860px){.views{grid-template-columns:1fr}}
+
+/* plans */
+.plan-info{display:grid;grid-template-columns:auto 1fr auto;gap:8px 28px;align-items:end;max-width:900px;margin:18px auto 0;padding-block:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plan-type{font-family:var(--f-display);font-size:84px;line-height:.8;color:var(--gold)}
+.plan-type small{display:block;font-family:var(--f-body);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--dust);margin-bottom:10px}
+.plan-meta{display:grid;gap:8px;min-width:0}
+.plan-meta strong{font-family:var(--f-display);font-weight:500;font-size:30px;line-height:1}
+.plan-meta p{color:var(--dust);font-size:15.5px}
+.specs{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px}
+.specs span{display:inline-flex;gap:7px;align-items:center}
+.specs svg{width:18px;height:18px;color:var(--gold)}
+.plan-units{text-align:right;font-size:13px;color:var(--dust);letter-spacing:.06em}
+.plan-units b{display:block;font-family:var(--f-display);font-size:34px;font-weight:500;color:var(--sand);letter-spacing:0;line-height:1}
+.ptabs{display:flex;justify-content:center;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.ptab{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:transparent;font-family:var(--f-display);font-size:22px;cursor:pointer;transition:all .25s}
+.ptab[aria-selected="true"]{background:var(--gold);color:var(--ink-on-gold);border-color:var(--gold)}
+@media (max-width:640px){.plan-info{grid-template-columns:auto 1fr}.plan-units{grid-column:1/-1;text-align:left;display:flex;gap:10px;align-items:baseline}.plan-units b{display:inline;font-size:26px}.plan-type{font-size:64px}}
+
+/* furnishing */
+.furn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px);align-items:start;background:var(--night);padding:clamp(24px,4vw,44px);border:1px solid var(--line)}
+.furn ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 28px;counter-reset:f}
+.furn li{counter-increment:f;display:grid;grid-template-columns:30px 1fr;gap:10px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.furn li::before{content:counter(f);font-family:var(--f-display);color:var(--gold);font-size:20px;line-height:1.2}
+.furn li small{color:var(--dust);display:block;font-size:13px}
+@media (max-width:860px){.furn{grid-template-columns:1fr}}
+@media (max-width:520px){.furn ol{grid-template-columns:1fr}}
+
+/* facilities */
+.fac-plans{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin-bottom:clamp(36px,5vw,56px)}
+.fac-plan{margin:0;background:#ebd9c5;cursor:zoom-in;position:relative;overflow:hidden;border-radius:2px}
+.fac-plan img{width:100%;aspect-ratio:1.1/1;object-fit:contain;transition:transform .8s ease}
+.fac-plan:hover img{transform:scale(1.04)}
+.fac-plan figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(19,16,12,.86);padding:12px 16px;font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.fac-plan figcaption span{color:var(--gold)}
+.groups{display:grid;grid-template-columns:repeat(5,1fr);gap:28px}
+.group h3{font-size:24px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid var(--gold);display:flex;align-items:center;gap:10px}
+.gi{width:36px;height:36px;flex:none;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold)}
+.gi svg{width:18px;height:18px}
+.group ul{margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:15px;color:var(--dust)}
+.group li b{color:var(--sand);font-weight:400}
+@media (max-width:1000px){.groups{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.groups{grid-template-columns:1fr 1fr;gap:28px 20px}.fac-plans{grid-template-columns:1fr}}
+@media (max-width:420px){.groups{grid-template-columns:1fr}}
+
+/* living */
+.living{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.live{border:1px solid var(--line);padding:26px 24px;display:grid;gap:10px;align-content:start;background:var(--night)}
+.live h3{font-size:24px}
+.live p{color:var(--dust);font-size:15.5px}
+.live .k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);display:flex;align-items:center;gap:10px}
+.live .k i{width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,118,77,.55);display:grid;place-items:center;font-style:normal}
+.live .k svg{width:17px;height:17px}
+@media (max-width:900px){.living{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.living{grid-template-columns:1fr}}
+
+/* location */
+.loc{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.map{margin:0;position:relative;cursor:zoom-in;overflow:hidden;border-radius:2px}
+.map img{width:100%;aspect-ratio:1.39/1;object-fit:cover}
+.map .pin{position:absolute;left:50.5%;top:58%;width:16px;height:16px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%)}
+.map .pin::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:1px solid var(--gold);animation:ping 2.4s ease-out infinite}
+@keyframes ping{from{transform:scale(.4);opacity:1}to{transform:scale(2.2);opacity:0}}
+.ltabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.ltab{border:1px solid var(--line);background:transparent;padding:8px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.ltab[aria-selected="true"]{border-color:var(--gold);color:var(--gold);background:var(--gold-soft)}
+.dist{margin:0;padding:0;list-style:none}
+.dist li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.dist li span:last-child{font-variant-numeric:tabular-nums;color:var(--gold);white-space:nowrap}
+@media (max-width:860px){.loc{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 2px;font-family:var(--f-display);font-size:clamp(21px,2.3vw,25px);line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg) translateY(-3px);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(225deg) translateY(-3px)}
+.faq .ans{padding:0 2px 22px;color:var(--dust);max-width:62ch}
+
+/* contact */
+.close{position:relative;overflow:hidden}
+.close-bg{position:absolute;inset:0}
+.close-bg img{width:100%;height:100%;object-fit:cover;opacity:.38}
+.close-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--night),rgba(250,235,215,.62) 40%,var(--night))}
+.close-in{position:relative;display:grid;gap:22px;justify-items:center;text-align:center}
+.agent{display:flex;align-items:center;gap:18px;text-align:left;margin-top:18px;padding:18px 22px 18px 18px;border:1px solid var(--line);background:rgba(250,235,215,.88);border-radius:999px}
+.avatar{width:84px;height:84px;box-shadow:0 0 0 2px var(--night),0 0 0 3px var(--gold);border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--f-display);font-size:28px;color:var(--ink-on-gold);background:linear-gradient(135deg,#b88452,#94523a);overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.agent b{display:block;font-family:var(--f-display);font-weight:500;font-size:24px;line-height:1.1}
+.agent span{font-size:13.5px;color:var(--dust)}
+.agent .num{display:block;color:var(--gold);font-size:14.5px;user-select:all;-webkit-user-select:all}
+footer{border-top:1px solid var(--line);padding-block:28px calc(110px + env(safe-area-inset-bottom,0px))}
+footer p{font-size:12.5px;color:var(--dust);max-width:90ch;line-height:1.6}
+
+/* floating contact */
+.fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-menu{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-menu a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;background:var(--panel-2);border:1px solid var(--gold);color:var(--sand);text-decoration:none;font-size:15px;font-weight:500;box-shadow:0 12px 30px -12px rgba(59,42,30,.45);animation:pop .35s cubic-bezier(.2,.8,.2,1) both}
+.fab-menu a:nth-child(2){animation-delay:.06s}
+.fab-menu a svg{width:19px;height:19px;color:var(--gold)}
+@keyframes pop{from{transform:translateY(12px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+.fab-btn{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;background:var(--clay);color:var(--ink-on-gold);border:0;font-weight:600;font-size:15.5px;letter-spacing:.02em;cursor:pointer;box-shadow:0 14px 34px -12px rgba(59,42,30,.55);position:relative}
+.fab-btn svg{width:20px;height:20px}
+.fab-btn::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid var(--clay);animation:halo 2.8s ease-out infinite}
+.fab-btn[aria-expanded="true"]::before{animation:none}
+@keyframes halo{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.35,1.6);opacity:0}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(24,17,11,.96);color:var(--on-photo);--line:rgba(253,246,234,.25);--gold:#d9b27a;--dust:#c9b79c;display:grid;grid-template-rows:auto 1fr auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px var(--gut-r) 12px var(--gut)}
+.lb-cap{font-family:var(--f-display);font-size:22px;min-width:0}
+.lb-cap small{font-family:var(--f-body);font-size:13px;color:var(--dust);margin-left:10px;letter-spacing:.1em}
+.lb-x{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;display:grid;place-items:center;flex:none}
+.lb-x svg{width:20px;height:20px}
+.lb-stage{position:relative;overflow:hidden;touch-action:none;min-height:0}
+.lb-stage img{position:absolute;left:12px;top:8px;width:calc(100% - 24px);height:calc(100% - 16px);max-width:none;object-fit:contain;transform-origin:0 0;user-select:none;-webkit-user-drag:none;cursor:zoom-in}
+.lb-stage.zoomed img{cursor:grab}
+.lb-bot{display:flex;justify-content:center;align-items:center;gap:22px;padding:12px}
+.lb-bot .note{min-width:170px;text-align:center}
+
+/* reveal: always visible, only eases into place */
+.rv{transition:transform 1s cubic-bezier(.2,.7,.2,1),opacity 1s ease}
+.rv.pre{transform:translateY(28px);opacity:.35}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv.pre{transform:none;opacity:1}}
+/* facade duo under the numbers band */
+.duo-band{padding-block:clamp(36px,5vw,56px) 0}
+.duo{display:grid;grid-template-columns:.8fr 1.6fr;gap:clamp(16px,2.4vw,28px);align-items:end}
+.duo figure{margin:0;cursor:zoom-in;display:grid;gap:12px;min-width:0}
+.duo .ph{overflow:hidden;background:var(--panel)}
+.duo .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.duo figure:hover .ph img{transform:scale(1.04)}
+.duo-a .ph{aspect-ratio:4/5}
+.duo-a .ph img{object-position:50% 35%}
+.duo-b .ph{aspect-ratio:16/9}
+.duo figcaption{display:grid;gap:2px;font-family:var(--f-display);font-size:clamp(20px,2vw,24px);line-height:1.15;padding-left:6%}
+.duo figcaption small{font-family:var(--f-body);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.duo-dots{display:none;justify-content:center;gap:8px;margin-top:14px}
+.duo-dots span{width:7px;height:7px;border-radius:50%;background:var(--line);transition:background .3s,width .3s}
+.duo-dots span.on{background:var(--gold);width:22px;border-radius:4px}
+@media (max-width:700px){
+  .duo{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-left:calc(-1 * var(--gut));margin-right:calc(-1 * var(--gut-r));padding-inline:8vw;gap:14px}
+  .duo::-webkit-scrollbar{display:none}
+  .duo figure{flex:0 0 84%;scroll-snap-align:center}
+  .duo-b .ph{aspect-ratio:4/5}
+  .duo-b .ph img{object-position:16% 50%}
+  .duo-dots{display:flex}
+}
+/* design: large overlapping layers on the page ground */
+.design-copy{max-width:720px}
+.layers{position:relative;max-width:1280px;margin:clamp(28px,4vw,48px) auto clamp(16px,3vw,40px);padding-inline:max(10px, env(safe-area-inset-left,0px)) max(10px, env(safe-area-inset-right,0px));display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto;z-index:1}
+.layers figure{margin:0;overflow:hidden;position:relative;cursor:zoom-in}
+.layers img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform}
+.layers .l1{grid-column:1/6;grid-row:1;aspect-ratio:4/5;z-index:1}
+.layers .l2{grid-column:4/9;grid-row:1;aspect-ratio:1/1;margin-top:32%;z-index:3}
+.layers .l3{grid-column:8/13;grid-row:1;aspect-ratio:4/5;margin-top:10%;z-index:2;align-self:start}
+@media (max-width:700px){
+  .layers .l1{grid-column:1/10;grid-row:1}
+  .layers .l2{grid-column:5/13;grid-row:2;margin-top:-34%}
+  .layers .l3{grid-column:2/10;grid-row:3;margin-top:-22%}
+}
+.head:not(.center),.hero-in,.design-copy,.vinfo,.furn .head{padding-left:var(--indent)}
+.why,.living,.groups,.views>div:first-child,.loc>div:first-child{margin-left:var(--indent)}
+/* price list funnel */
+.fn{position:fixed;inset:0;z-index:90;background:var(--night);overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.fn::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;background-image:repeating-linear-gradient(0deg,var(--gold) 0 1px,transparent 1px 36px),repeating-linear-gradient(60deg,var(--gold) 0 1px,transparent 1px 36px),repeating-linear-gradient(120deg,var(--gold) 0 1px,transparent 1px 36px);-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 70%)}
+.fn-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px var(--gut-r) 14px var(--gut);background:linear-gradient(var(--night) 70%,rgba(250,235,215,0))}
+.fn-bar .mark{color:var(--sand);text-shadow:none}
+.fn-bar .mark b{color:var(--gold)}
+.fn-ico{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--night);display:grid;place-items:center;cursor:pointer;color:var(--sand)}
+.fn-ico svg{width:19px;height:19px}
+.fn-in{position:relative;max-width:680px;margin:0 auto;padding:8px var(--gut-r) 56px var(--gut)}
+.fn-step{display:grid;gap:26px;animation:fnIn .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fnIn{from{transform:translateY(16px);opacity:.2}to{transform:none;opacity:1}}
+.fn-step h2{font-size:clamp(32px,6vw,46px)}
+.fn-q{display:grid;gap:12px;border:0;margin:0;padding:0;min-width:0}
+.fn-q legend{font-size:12.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding:0;margin-bottom:12px}
+.fn-q legend span{color:var(--dust);letter-spacing:.04em;text-transform:none;font-weight:400;margin-left:6px}
+.u-list{display:grid;gap:10px}
+.u-opt{display:grid;grid-template-columns:54px 1fr;align-items:center;gap:14px;text-align:left;padding:14px 18px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+.u-opt b{font-family:var(--f-display);font-weight:500;font-size:40px;line-height:1;color:var(--gold)}
+.u-opt .u-mid{display:grid;gap:2px;min-width:0}
+.u-opt .u-mid strong{font-weight:500;font-size:15.5px}
+.u-opt .u-mid span{font-size:13.5px;color:var(--dust)}
+.u-opt .u-price{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;padding-top:10px;border-top:1px solid var(--line);font-family:var(--f-body);font-variant-numeric:lining-nums tabular-nums}
+.u-opt .u-price strong{font-family:var(--f-body);font-weight:600;font-size:19px;line-height:1.2;letter-spacing:.01em;white-space:nowrap}
+.u-opt .u-price span{font-size:14.5px;font-weight:500;color:var(--clay);white-space:nowrap}
+.u-opt .u-price i{font-style:normal;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dust);margin-right:6px}
+.u-opt[aria-pressed="true"]{border-color:var(--clay);background:var(--night);box-shadow:0 0 0 1px var(--clay) inset}
+.chips2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.chips3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.c-opt{min-height:54px;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;font-size:15px;transition:all .2s}
+.c-opt[aria-pressed="true"]{border-color:var(--clay);background:var(--clay);color:var(--ink-on-gold)}
+.fn-actions{display:grid;gap:10px}
+.fn-actions .btn{width:100%}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.fn-fine{font-size:12.5px;color:var(--dust);line-height:1.55}
+.fn-field{display:grid;gap:6px}
+.fn-field label{font-size:13px;letter-spacing:.06em;color:var(--dust)}
+.fn-field input{font:inherit;font-size:16px;color:var(--sand);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px 16px;min-height:52px;width:100%}
+.fn-field input:focus{outline:2px solid var(--clay);outline-offset:1px;border-color:transparent}
+.fn-err{color:var(--clay);font-size:13.5px}
+.fn-sum{display:grid;gap:0;border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:6px 18px}
+.fn-sum div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fn-sum div:last-child{border-bottom:0}
+.fn-sum dt{color:var(--dust)}
+.fn-sum dd{margin:0;text-align:right;font-weight:500}
+.fn-done{width:58px;height:58px;border-radius:50%;background:var(--clay);color:var(--ink-on-gold);display:grid;place-items:center}
+.fn-done svg{width:28px;height:28px}
+@media (max-width:420px){.u-opt{grid-template-columns:40px 1fr;row-gap:8px;padding:14px}.u-opt b{font-size:34px}.u-opt .u-price{flex-wrap:nowrap;gap:10px}.u-opt .u-price strong{font-size:16.5px}.u-opt .u-price span{font-size:13px}.u-opt .u-price i{font-size:10.5px;margin-right:4px}.chips3{grid-template-columns:1fr 1fr 1fr}.c-opt{font-size:14px;padding:8px}}
+/* faded photos behind facility groups and Everyday Living */
+.group{position:relative;isolation:isolate;padding:118px 4px 8px}
+.group::before{content:"";position:absolute;left:0;right:0;top:0;height:132px;z-index:-1;background:var(--bg) center/cover no-repeat;opacity:.92;border-radius:2px;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 45%,transparent 100%),linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(180deg,#000 0%,#000 45%,transparent 100%),linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.group:hover::before{transform:scale(1.03)}
+#living{position:relative;isolation:isolate;overflow:hidden}
+.sec-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.sec-bg img{width:100%;height:100%;object-fit:cover;opacity:.3;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 70%,transparent 100%)}
+#living .live{background:rgba(250,235,215,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+/* why: photo cards with key numbers */
+.why2{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px)}
+.wc{margin:0;display:grid;gap:10px;min-width:0}
+.wc-ph{aspect-ratio:4/3;overflow:hidden;background:var(--panel)}
+.wc-ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.wc:hover .wc-ph img{transform:scale(1.06)}
+.wc figcaption{display:grid;gap:2px;padding-left:8%}
+.wc figcaption b{font-family:var(--f-display);font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1;color:var(--clay)}
+.wc figcaption span{font-size:14px;letter-spacing:.04em;color:var(--sand)}
+@media (max-width:760px){.why2{grid-template-columns:1fr 1fr;gap:16px 12px}.wc figcaption b{font-size:26px}.wc figcaption span{font-size:13px}}
+.why2{margin-left:var(--indent)}
+/* location: wide map, tabs and distances underneath */
+.loc{grid-template-columns:1fr;gap:22px;max-width:1120px;margin-inline:auto}
+.loc>div:first-child{margin-left:0}
+.loc .map img{aspect-ratio:16/10;object-position:50% 55%}
+.loc .ltabs{justify-content:center;margin-bottom:8px}
+.loc .dist{column-count:2;column-gap:48px}
+.loc .dist li{break-inside:avoid}
+.loc .note{text-align:center}
+@media (max-width:700px){.loc .dist{column-count:1}.loc .map img{aspect-ratio:4/3}.loc .ltabs{flex-wrap:nowrap;gap:5px}.loc .ltab{padding:8px 11px;font-size:13px}}
+.loc .btns{justify-content:center}
+/* floor plan details: centred under the plan, in line with the arrows */
+.plan-info{grid-template-columns:1fr;justify-items:center;text-align:center;gap:12px;align-items:center}
+.plan-type{display:flex;align-items:baseline;gap:12px}
+.plan-type small{display:inline;margin:0}
+.plan-meta{justify-items:center}
+.specs{justify-content:center}
+.plan-meta p{max-width:46ch}
+.plan-units{grid-column:auto;text-align:center;display:flex;gap:8px;align-items:baseline;justify-content:center}
+.plan-units b{display:inline}
+</style>
+
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="hero-media"><img src="img/aerial.jpg" alt="Artist's impression of M Amaya's two towers at sunset, with the Penang Second Bridge across the sea" fetchpriority="high"></div>
+  <div class="hero-top">
+    <div class="mark"><b>M</b>Amaya</div>
+    <a href="https://calendar.app.google/xnnPdBDFLtufJ67g8" target="_blank" rel="noopener">Book a Viewing</a>
+  </div>
+  <div class="hero-body">
+    <div class="wrap hero-in">
+      <p class="eyebrow">Mah Sing &nbsp;·&nbsp; Southbay, Batu Maung, Penang</p>
+      <h1><span>Sea-view residences</span>M Amaya</h1>
+      <p class="lead">Freehold sea-view homes, 900m from the Penang Second Bridge.</p>
+      <div>
+        <div class="chips">
+          <span class="chip"><b>Freehold</b></span>
+          <span class="chip"><b>721 – 1,432</b> sq ft</span>
+          <span class="chip"><b>1+1 to 4</b> bedrooms</span>
+          <span class="chip">Completion <b>2030</b></span>
+        </div>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://calendar.app.google/xnnPdBDFLtufJ67g8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book a Viewing</a>
+          <button class="btn btn-line" type="button" data-funnel><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>Get the Price List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="glance" aria-label="M Amaya at a glance">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><strong data-count="833">833</strong><span>Homes across two towers</span></div>
+      <div class="stat"><strong data-count="37">37</strong><span>Storeys per tower</span></div>
+      <div class="stat"><strong data-count="4.8" data-dec="1">4.8<small>ac</small></strong><span>Freehold land</span></div>
+      <div class="stat"><strong data-count="41">41</strong><span>Facilities on the Level 8 podium</span></div>
+      <div class="stat"><strong>0.33<small>psf</small></strong><span>Maintenance (RM), sinking fund included</span></div>
+      <div class="stat"><strong>2030</strong><span>Expected completion</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="duo-band" id="facade" aria-label="Facade and aerial view">
+  <div class="wrap">
+    <div class="duo rv" id="duo">
+      <figure class="duo-a" data-i="0" role="button" tabindex="0" aria-label="Open facade image full screen"><div class="ph fade"><img src="img/facade.jpg" alt="Artist's impression of M Amaya's two towers with the Kumiko-inspired terracotta facade"></div><figcaption><small>Architecture</small>Kumiko-inspired facade</figcaption></figure>
+      <figure class="duo-b" data-i="1" role="button" tabindex="0" aria-label="Open aerial view full screen"><div class="ph fade"><img src="img/aerial.jpg" alt="Artist's impression of M Amaya at sunset beside the sea and the Penang Second Bridge"></div><figcaption><small>Overview</small>Aerial view at sunset</figcaption></figure>
+    </div>
+    <div class="duo-dots" aria-hidden="true"><span class="on"></span><span></span></div>
+  </div>
+</section>
+
+<section class="band kumiko" id="why">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Why buyers shortlist it</p>
+      <h2>Everything within minutes</h2>
+    </div>
+    <div class="why2 rv">
+        <figure class="wc"><div class="wc-ph fade"><img src="img/view_east.jpg" alt="" loading="lazy"></div><figcaption><b>900m</b><span>Penang Second Bridge</span></figcaption></figure>
+        <figure class="wc"><div class="wc-ph fade"><img src="img/map.jpg" alt="" loading="lazy"></div><figcaption><b>4.6km</b><span>Upcoming LRT station</span></figcaption></figure>
+        <figure class="wc"><div class="wc-ph fade"><img src="img/view_north.jpg" alt="" loading="lazy"></div><figcaption><b>900m</b><span>Bayan Lepas FIZ</span></figcaption></figure>
+        <figure class="wc"><div class="wc-ph fade"><img src="img/aerial.jpg" alt="" loading="lazy"></div><figcaption><b>7km</b><span>Penang Airport</span></figcaption></figure>
+        <figure class="wc"><div class="wc-ph fade"><img src="img/dropoff.jpg" alt="" loading="lazy"></div><figcaption><b>Shuttle</b><span>Planned: LRT, Queensbay &amp; airport</span></figcaption></figure>
+        <figure class="wc"><div class="wc-ph fade"><img src="img/podium.jpg" alt="" loading="lazy"></div><figcaption><b>Village Grocer</b><span>In the retail podium</span></figcaption></figure>
+      </div>
+  </div>
+</section>
+
+<section class="band" id="design">
+  <div class="wrap">
+    <div class="design-copy rv">
+      <p class="eyebrow">Design concept</p>
+      <h2>Japanese calm, Penang light</h2>
+      <p class="lead">Inspired by Japanese Shoji and Kumiko screens.</p>
+      <div class="tags"><span class="tag">Light</span><span class="tag">Shadow</span><span class="tag">Movement</span><span class="tag">Material</span></div>
+    </div>
+  </div>
+  <div class="layers rv">
+    <figure class="l1 fade"><img src="img/lobby.jpg" alt="Artist's impression of the lobby with a tall Kumiko screen" loading="lazy" data-par="0.06"></figure>
+    <figure class="l2 fade"><img src="img/interior.jpg" alt="Artist's impression of an interior with a paper lantern and slatted wall" loading="lazy" data-par="0.1"></figure>
+    <figure class="l3 fade"><img src="img/kumiko.jpg" alt="Artist's impression of Kumiko screens filtering sunlight" loading="lazy" data-par="0.1"></figure>
+  </div>
+</section>
+
+<section class="band kumiko" id="gallery">
+  <div class="wrap">
+    <div class="head center rv">
+      <p class="eyebrow">Arrival &amp; facilities</p>
+      <h2>A resort on the eighth floor</h2>
+    </div>
+  </div>
+  <div class="track orbit" data-track="gal" data-w="0.86" data-maxvh="0.74" data-aspect="1.78"></div>
+  <p class="note hint">Swipe · tap to enlarge · artist's impressions</p>
+</section>
+
+<section class="band alt" id="views">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Choose your view</p>
+      <h2>Sea on three sides, gardens on the fourth</h2>
+    </div>
+    <div class="views">
+      <div class="rv">
+        <div class="vtabs" role="tablist" aria-label="Facing direction">
+          <button class="vtab" role="tab" id="vt-n" aria-selected="true" data-v="0"><b>N</b><span>Sea</span></button>
+          <button class="vtab" role="tab" id="vt-e" aria-selected="false" data-v="1"><b>E</b><span>Sea</span></button>
+          <button class="vtab" role="tab" id="vt-s" aria-selected="false" data-v="2"><b>S</b><span>Hill &amp; sea</span></button>
+          <button class="vtab" role="tab" id="vt-w" aria-selected="false" data-v="3"><b>W</b><span>Garden</span></button>
+        </div>
+        <div class="vpic" id="vpic" role="button" tabindex="0" aria-label="Open view photo full screen">
+          <span class="badge" id="vbadge">Actual site view</span>
+          <img class="on" src="img/view_north.jpg" alt="Actual view north from the M Amaya site toward Southbay and the Penang Second Bridge">
+          <img src="img/view_east.jpg" alt="Actual view east from the M Amaya site over the sea" loading="lazy">
+          <img src="img/view_south.jpg" alt="Actual view south from the M Amaya site over green hills and the coast" loading="lazy">
+          <img src="img/garden.jpg" alt="Artist's impression of the Kumiko Islands Secret Garden on Level 8" loading="lazy">
+        </div>
+      </div>
+      <div class="vinfo rv" aria-live="polite">
+        <p class="eyebrow" id="vdir">Facing north</p>
+        <h3 id="vtitle">Southbay and the Second Bridge</h3>
+        <p class="lead" id="vtext">Southbay waterfront and the Second Bridge.</p>
+        <div class="faces" id="vfaces"></div>
+        <p class="note">Actual site photos. Views vary by floor.</p>
+        <button class="linkbtn" type="button" id="keyplanBtn">See the floor key plan</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band kumiko" id="plans">
+  <div class="wrap">
+    <div class="head center rv">
+      <p class="eyebrow">Floor plans</p>
+      <h2>Five layouts, 721 to 1,432 sq ft</h2>
+    </div>
+    <div class="ptabs" role="tablist" aria-label="Unit type">
+      <button class="ptab" role="tab" id="pt-0" data-p="0" aria-selected="true">A</button>
+      <button class="ptab" role="tab" id="pt-1" data-p="1" aria-selected="false">B</button>
+      <button class="ptab" role="tab" id="pt-2" data-p="2" aria-selected="false">C</button>
+      <button class="ptab" role="tab" id="pt-3" data-p="3" aria-selected="false">D</button>
+      <button class="ptab" role="tab" id="pt-4" data-p="4" aria-selected="false">E</button>
+    </div>
+  </div>
+  <div class="track flat" data-track="plan" data-w="0.86" data-maxvh="0.64" data-aspect="1.15"></div>
+  <div class="wrap" id="planInfo">
+    <div class="plan-info" aria-live="polite">
+      <div class="plan-type"><small>Type</small><span id="pType">A</span></div>
+      <div class="plan-meta">
+        <strong id="pSize">721 sq ft</strong>
+        <div class="specs" id="pSpecs"></div>
+        <p id="pNote"></p>
+      </div>
+      <div class="plan-units"><b id="pUnits">288</b>units</div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" aria-labelledby="furnH">
+  <div class="wrap">
+    <div class="furn rv">
+      <div class="head" style="margin:0">
+        <p class="eyebrow">Furnishing</p>
+        <h2 id="furnH">Partially furnished</h2>
+        <p class="lead">9 items fitted, ready to move in.</p>
+      </div>
+      <ol>
+        <li><span>Kitchen cabinets<small>Top and bottom</small></span></li>
+        <li><span>Side-by-side domino hob</span></li>
+        <li><span>Self-circulating cooker hood</span></li>
+        <li><span>Kitchen sink and tap</span></li>
+        <li><span>Washer and dryer combo</span></li>
+        <li><span>Master bedroom wardrobe</span></li>
+        <li><span>Bedroom 2 wardrobe<small>Types B, C, D and E</small></span></li>
+        <li><span>Air-conditioners<small>2 sets</small></span></li>
+        <li><span>Instant water heaters<small>2 sets</small></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band kumiko" id="facilities">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Facilities</p>
+      <h2>41 facilities on Level 8, a Zen garden above</h2>
+    </div>
+    </div>
+  <div class="track flat rv" data-track="fac" data-w="0.8" data-maxvh="0.66" data-aspect="1.1" style="margin-bottom:clamp(36px,5vw,56px)"></div>
+  <p class="note hint" style="margin:-24px 0 clamp(36px,5vw,56px)">Swipe for Level 9 and the typical floor. Tap a plan to zoom.</p>
+  <div class="wrap">
+    <div class="groups rv">
+      <div class="group" style="--bg:url(img/pool.jpg)"><h3><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 19.5c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 12V5a2 2 0 0 1 4 0M16 12V5a2 2 0 0 0-4 0M8 8h8"/></svg></span>Swim &amp; unwind</h3><ul><li><b>50m infinity lap pool</b></li><li>Onsen jacuzzi</li><li>Children's pool with waterplay</li></ul></div>
+      <div class="group" style="--bg:url(img/podium.jpg)"><h3><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7v10M18 7v10M3 9.5v5M21 9.5v5M6 12h12"/></svg></span>Stay active</h3><ul><li><b>Gymnasium</b></li><li>Ladies' gymnasium</li><li>Yoga room</li></ul></div>
+      <div class="group" style="--bg:url(img/bbq.jpg)"><h3><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10.5h1.5a2.5 2.5 0 0 1 0 5H16M8 3.5c0 1.2 1 1.3 1 2.5M12 3.5c0 1.2 1 1.3 1 2.5"/></svg></span>Host &amp; gather</h3><ul><li><b>Covered BBQ &amp; dining</b></li><li>Tea house</li><li>Cora lounge</li></ul></div>
+      <div class="group" style="--bg:url(img/playground.jpg)"><h3><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="6" r="2.4"/><circle cx="16.5" cy="8.5" r="1.9"/><path d="M3.5 20v-3.5A4.5 4.5 0 0 1 8 12a4.5 4.5 0 0 1 4.5 4.5V20M13 20v-2.5a3.5 3.5 0 0 1 7 0V20"/></svg></span>Work &amp; family</h3><ul><li><b>Co-working room</b></li><li>Kids' room</li><li>The Mah Sing Playground</li></ul></div>
+      <div class="group" style="--bg:url(img/garden.jpg)"><h3><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14zM5 19l7-7"/></svg></span>Gardens</h3><ul><li><b>Kumiko Islands Secret Garden</b></li><li>Kumiko pavilion and cabana</li><li>Meditation deck</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="living">
+  <div class="sec-bg" aria-hidden="true"><img src="img/dropoff.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Everyday living</p>
+      <h2>Secure, clean and easy to manage</h2>
+    </div>
+    <div class="living rv">
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></i>Security</span><h3>Multi-tier access</h3><p>Guardhouse, LPR, card-access lifts.</p></div>
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg></i>Hygiene</span><h3>Automated waste collection</h3><p>No rubbish chutes, no smell.</p></div>
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14zM5 19l7-7"/></svg></i>Green</span><h3>GreenRE Gold (provisional)</h3><p>Solar power, rainwater harvesting.</p></div>
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></i>EV ready</span><h3>20 charging bays</h3><p>9 for residents.</p></div>
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></i>App</span><h3>MY Mah Sing</h3><p>Facilities, visitors, updates in one app.</p></div>
+      <div class="live"><span class="k"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="14" r="4"/><path d="M11 11l8-8M16 6l2 2M14 8l2 2"/></svg></i>Owners</span><h3>M Concierge</h3><p>Renovation, tenants, resale help.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band kumiko" id="location">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Location</p>
+      <h2>Southbay, Batu Maung</h2>
+    </div>
+    <div class="loc">
+      <div class="rv" style="display:grid;gap:16px">
+        <figure class="map" id="mapFig" role="button" tabindex="0" aria-label="Open location map full screen"><img src="img/map.jpg" alt="Satellite map of southern Penang showing M Amaya near the Penang Second Bridge" loading="lazy"></figure>
+        <div class="btns">
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=M%20Amaya%20Southbay%20Batu%20Maung%20Penang" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Open in Google Maps</a>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="ltabs" role="tablist" aria-label="Nearby places">
+          <button class="ltab" role="tab" id="lt-0" data-l="0" aria-selected="true">Landmarks</button>
+          <button class="ltab" role="tab" id="lt-1" data-l="1" aria-selected="false">Schools</button>
+          <button class="ltab" role="tab" id="lt-2" data-l="2" aria-selected="false">Malls</button>
+          <button class="ltab" role="tab" id="lt-3" data-l="3" aria-selected="false">Hospitals</button>
+        </div>
+        <ul class="dist" id="dist"></ul>
+        <p class="note" style="margin-top:12px">Source: developer sales kit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="faq">
+  <div class="wrap">
+    <div class="head center rv">
+      <p class="eyebrow">Common questions</p>
+      <h2>Before you visit</h2>
+    </div>
+    <div class="faq">
+      <details><summary>When will M Amaya be completed?</summary><p class="ans">Expected completion is 2030.</p></details>
+      <details><summary>Is it freehold?</summary><p class="ans">Yes. M Amaya sits on 4.8 acres of freehold land in Southbay, Batu Maung, developed by Vienna View Development Sdn Bhd, a wholly owned subsidiary of Mah Sing Group.</p></details>
+      <details><summary>What is the maintenance fee?</summary><p class="ans">RM0.33 per sq ft, including the sinking fund, as per the approved memo.</p></details>
+      <details><summary>How high are the ceilings?</summary><p class="ans">Floor-to-floor height is 3m, with up to 2,850mm clear height to the soffit.</p></details>
+      <details><summary>How many lifts are there?</summary><p class="ans">Each block has 3 passenger lifts and 1 fire lift. Estimated waiting time is about 24 seconds.</p></details>
+      <details><summary>What security is provided?</summary><p class="ans">CCTV on the perimeter and common areas, a guardhouse, licence-plate recognition for residents' cars, and access cards for the lobby and lifts.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band close" id="contact">
+  <div class="close-bg"><img src="img/pool.jpg" alt="" loading="lazy"></div>
+  <div class="wrap close-in rv">
+    <p class="eyebrow">Next step</p>
+    <h2>See the show gallery in Batu Maung</h2>
+    <p class="lead">Book a viewing or get the price list.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn btn-gold" href="https://calendar.app.google/xnnPdBDFLtufJ67g8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book a Viewing</a>
+      <button class="btn btn-line" type="button" data-funnel><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>Get the Price List</button>
+      <a class="btn btn-line" href="https://wa.me/601112322833?text=Hi%20Javenn%2C%20I%27m%20interested%20in%20M%20Amaya%20(Southbay%2C%20Batu%20Maung).%20Please%20send%20me%20the%20latest%20price%20list." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp Javenn</a>
+    </div>
+    <div class="agent">
+      <div class="avatar" id="avatar"><img src="img/javenn.jpg" alt="Javenn Lim, Property Advisor at FLP Realty" loading="lazy"></div>
+      <div><b>Javenn Lim</b><span>Property Advisor · FLP Realty Sdn Bhd</span><span class="num">+60 11-1232 2833</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>All images are artist's impressions except the site view photos. Information is taken from the developer's sales materials and may change; the Sale and Purchase Agreement prevails. This page is prepared by Javenn Lim, Property Advisor, FLP Realty Sdn Bhd.</p>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <div class="fab-menu" id="fabMenu" hidden>
+    <a href="https://wa.me/601112322833?text=Hi%20Javenn%2C%20I%27m%20interested%20in%20M%20Amaya%20(Southbay%2C%20Batu%20Maung).%20Please%20share%20more%20details." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Chat on WhatsApp</a>
+    <a href="https://calendar.app.google/xnnPdBDFLtufJ67g8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Pick a viewing slot</a>
+  </div>
+  <button class="fab-btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span id="fabLabel">Book a Viewing</span></button>
+</div>
+
+<div class="fn" id="fn" hidden role="dialog" aria-modal="true" aria-labelledby="fnTitle">
+  <div class="fn-bar">
+    <button class="fn-ico" id="fnBack" type="button" aria-label="Back" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="mark"><b>M</b>Amaya</div>
+    <button class="fn-ico" id="fnClose" type="button" aria-label="Close price list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="fn-in">
+    <section class="fn-step" id="fn1">
+      <div class="head" style="margin:0">
+        <p class="eyebrow">Your picks</p>
+        <h2>Find the unit that fits you</h2>
+        <p class="lead">Tap your picks, then book a viewing.</p>
+      </div>
+      <fieldset class="fn-q">
+        <legend>Unit type <span>(pick one or more)</span></legend>
+        <div class="u-list" id="uList"></div>
+        <p class="fn-fine">Indicative starting prices. Monthly instalments are estimates at 3.65% p.a. over 35 years, subject to bank approval.</p>
+      </fieldset>
+      <fieldset class="fn-q">
+        <legend>Comfortable monthly instalment</legend>
+        <div class="chips2" id="iList"></div>
+      </fieldset>
+      <fieldset class="fn-q">
+        <legend>Purpose</legend>
+        <div class="chips3" id="pList"></div>
+      </fieldset>
+      <div class="fn-actions">
+        <button class="btn btn-gold" id="fnNext1" type="button" disabled>Continue to booking</button>
+        <a class="btn btn-line" id="fnWa1" href="https://wa.me/601112322833" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp Javenn with my choices</a>
+        <p class="fn-fine" id="fnHint1">Choose a unit type, instalment and purpose to continue.</p>
+      </div>
+    </section>
+
+    <section class="fn-step" id="fn2" hidden>
+      <div class="head" style="margin:0">
+        <p class="eyebrow">Price list</p>
+        <h2 id="fnTitle">Unlock M Amaya prices</h2>
+        <p class="lead">Enter your details to see prices and monthly instalments.</p>
+      </div>
+      <form id="fnForm" novalidate style="display:grid;gap:16px">
+        <div class="fn-field"><label for="fnName">Full name</label><input id="fnName" name="name" autocomplete="name" required></div>
+        <div class="fn-field"><label for="fnPhone">Phone (WhatsApp)</label><input id="fnPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 012 345 6789" required></div>
+        <div class="fn-field"><label for="fnEmail">Email</label><input id="fnEmail" name="email" type="email" autocomplete="email" required></div>
+        <p class="fn-err" id="fnErr" hidden></p>
+        <div class="fn-actions"><button class="btn btn-gold" id="fnSubmit" type="submit">Continue</button></div>
+        <p class="fn-fine">Next: prices and monthly instalments.</p>
+        <p class="fn-fine">Your details are only used by Javenn Lim (FLP Realty) to follow up on M Amaya.</p>
+      </form>
+    </section>
+
+    <section class="fn-step" id="fn3" hidden>
+      <span class="fn-done" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+      <div class="head" style="margin:0">
+        <p class="eyebrow">Received</p>
+        <h2 id="fnThanks">Thank you</h2>
+        <p class="lead">Your picks are with Javenn, and the booking calendar has opened in a new tab. If it didn't open, tap Book a Viewing below.</p>
+      </div>
+      <dl class="fn-sum" id="fnSum"></dl>
+      <div class="fn-actions">
+        <a class="btn btn-gold" id="fnBook" href="https://calendar.app.google/xnnPdBDFLtufJ67g8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book a Viewing</a>
+        <a class="btn btn-line" id="fnWa3" href="https://wa.me/601112322833" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp Javenn now</a>
+        <button class="btn btn-line" id="fnDone" type="button" style="border-color:var(--line);color:var(--dust)">Back to the page</button>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Full screen image">
+  <div class="lb-top"><div class="lb-cap" id="lbCap"></div><button class="lb-x" id="lbClose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
+  <div class="lb-bot">
+    <button class="arrow" id="lbPrev" type="button" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <span class="note" id="lbNote">Double-tap or pinch to zoom</span>
+    <button class="arrow" id="lbNext" type="button" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ARROW_L='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
+  var ARROW_R='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
+
+  /* ---------- data ---------- */
+  var GAL=[
+    {src:'img/dropoff.jpg',t:'Grand drop-off',k:'Arrival'},
+    {src:'img/podium.jpg',t:'Level 8 facilities podium',k:'Facilities'},
+    {src:'img/pool.jpg',t:'50m infinity lap pool',k:'Facilities'},
+    {src:'img/garden.jpg',t:'Kumiko Islands Secret Garden',k:'Gardens'},
+    {src:'img/bbq.jpg',t:'Covered BBQ and outdoor dining',k:'Facilities'},
+    {src:'img/playground.jpg',t:'The Mah Sing Playground',k:'Family'},
+    {src:'img/lobby.jpg',t:'Lobby with Kumiko screen',k:'Interiors',pos:'50% 40%'}
+  ];
+  var BED='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></svg>';
+  var BATH='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V6a2 2 0 0 1 3.5-1.3M7 19l-1 2M17 19l1 2"/></svg>';
+  var BAL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21v-8h16v8M8 13v8M12 13v8M16 13v8M6 13V4h12v9"/></svg>';
+  var STUDY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>';
+  var PLANS=[
+    {id:'A',size:'721 sq ft',units:'288',specs:[[BED,'1 bedroom'],[STUDY,'1 study'],[BATH,'2 bathrooms']],note:'Easy to rent out. The study works as a home office or guest room.'},
+    {id:'B',size:'990 sq ft',units:'344',specs:[[BED,'3 bedrooms'],[BATH,'2 bathrooms'],[BAL,'Balcony']],note:'The most popular layout, sized for a young family.'},
+    {id:'C',size:'1,211 sq ft',units:'115',specs:[[BED,'4 bedrooms'],[BATH,'2 bathrooms'],[BAL,'Balcony']],note:'Four bedrooms for a growing family or live-in parents.'},
+    {id:'D',size:'1,432 sq ft',units:'58',specs:[[BED,'4 bedrooms'],[BATH,'3 bathrooms'],[BAL,'Balcony']],note:'The largest layout, with three bathrooms. Sits at the tower corners.'},
+    {id:'E',size:'1,335 sq ft',units:'28',specs:[[BED,'4 bedrooms'],[BATH,'2 bathrooms'],[BAL,'Balcony']],note:'The rarest type, with only 28 units in the project.'}
+  ];
+  PLANS.forEach(function(p){p.src='img/plan_'+p.id+'.jpg';p.t='Type '+p.id+' · '+p.size;p.k='Floor plan';p.fit=true;});
+  var VIEWS=[
+    {dir:'Facing north',t:'Southbay and the Second Bridge',x:'Southbay waterfront and the Second Bridge.',f:['B','C','D'],badge:'Actual site view',cap:'View north from site'},
+    {dir:'Facing east',t:'Open sea to the horizon',x:'Open sea and the bridge.',f:['B','D'],badge:'Actual site view',cap:'View east from site'},
+    {dir:'Facing south',t:'Green hills and the coast',x:'Green hills and the coastline.',f:['B','C','D','E'],badge:'Actual site view',cap:'View south from site'},
+    {dir:'Facing west',t:'The Level 8 gardens',x:'Level 8 podium gardens.',f:['A','C'],badge:"Artist's impression",cap:'Garden view (artist’s impression)'}
+  ];
+  var DIST=[
+    [['Penang Second Bridge','900 m'],['Bayan Lepas FIZ','900 m'],['Penang War Museum','1.5 km'],['Penang International Airport','7.3 km'],['SPICE Arena','8 km'],['BJ Golf Club','9.1 km'],['Penang First Bridge','10 km'],['Karpal Singh Drive','14 km'],['Komtar / George Town','17 km']],
+    [['SJK(C) Wen Khai','2.1 km'],['SJK(C) Kwang Hwa','7.5 km'],['Straits International School','7.8 km'],['INTI International College','9.2 km'],['Universiti Sains Malaysia','10.1 km'],['Fairview International School','11.6 km']],
+    [['Giant Bayan Baru','6.5 km'],['Sunshine Square','7.5 km'],['Queensbay Mall','8.0 km'],["Lotus's E-Gate",'10.3 km'],['PWCC','11.2 km'],['Gurney Plaza','19.7 km']],
+    [['Pantai Hospital','6.3 km'],['Lam Wah Ee Hospital','14.3 km']]
+  ];
+
+  /* ---------- lightbox ---------- */
+  var lb=$('#lb'),lbImg=$('#lbImg'),lbStage=$('#lbStage'),lbCap=$('#lbCap'),lbSet=[],lbI=0,lastFocus=null;
+  var z={s:1,x:0,y:0};
+  function applyZ(){lbImg.style.transform='translate('+z.x+'px,'+z.y+'px) scale('+z.s+')';lbStage.classList.toggle('zoomed',z.s>1.01);}
+  function resetZ(){z={s:1,x:0,y:0};lbImg.style.transformOrigin='0 0';lbImg.style.transform='';lbStage.classList.remove('zoomed');}
+  function lbShow(i){lbI=(i+lbSet.length)%lbSet.length;var it=lbSet[lbI];resetZ();lbImg.src=it.src;lbImg.alt=it.t;lbCap.innerHTML='';lbCap.textContent=it.t;var sm=document.createElement('small');sm.textContent=(lbI+1)+' / '+lbSet.length;if(lbSet.length>1)lbCap.appendChild(sm);$('#lbPrev').hidden=$('#lbNext').hidden=lbSet.length<2;}
+  function lbOpen(set,i){lastFocus=document.activeElement;lbSet=set;lb.hidden=false;document.documentElement.style.overflow='hidden';lbShow(i);$('#lbClose').focus();}
+  function lbClose(){lb.hidden=true;document.documentElement.style.overflow='';lbImg.removeAttribute('src');if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  $('#lbClose').addEventListener('click',lbClose);
+  $('#lbPrev').addEventListener('click',function(){lbShow(lbI-1)});
+  $('#lbNext').addEventListener('click',function(){lbShow(lbI+1)});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lbClose();else if(e.key==='ArrowLeft')lbShow(lbI-1);else if(e.key==='ArrowRight')lbShow(lbI+1);});
+  // zoom: pinch, double-tap, drag-pan, swipe to change
+  (function(){
+    var pts={},start=null,lastTap=0,moved=false;
+    function rel(e){var r=lbImg.getBoundingClientRect();return {x:e.clientX,y:e.clientY,r:r};}
+    function zoomAt(cx,cy,ns){
+      // image box before transform
+      var r=lbImg.getBoundingClientRect();
+      var ox=r.left-z.x, oy=r.top-z.y; // untransformed origin (transform-origin 0 0)
+      var px=(cx-ox-z.x)/z.s, py=(cy-oy-z.y)/z.s;
+      ns=Math.max(1,Math.min(4,ns));
+      z.x=cx-ox-px*ns; z.y=cy-oy-py*ns; z.s=ns;
+      if(ns===1){z.x=0;z.y=0;}
+      applyZ();
+    }
+    lbStage.addEventListener('pointerdown',function(e){
+      lbStage.setPointerCapture&&lbStage.setPointerCapture(e.pointerId);
+      pts[e.pointerId]={x:e.clientX,y:e.clientY};
+      var ids=Object.keys(pts);
+      moved=false;
+      if(ids.length===1){start={x:e.clientX,y:e.clientY,zx:z.x,zy:z.y,t:Date.now()};}
+      else if(ids.length===2){var a=pts[ids[0]],b=pts[ids[1]];start={pinch:Math.hypot(a.x-b.x,a.y-b.y),s:z.s};}
+    });
+    lbStage.addEventListener('pointermove',function(e){
+      if(!pts[e.pointerId])return; pts[e.pointerId]={x:e.clientX,y:e.clientY};
+      var ids=Object.keys(pts);
+      if(ids.length===2&&start&&start.pinch){var a=pts[ids[0]],b=pts[ids[1]];var d=Math.hypot(a.x-b.x,a.y-b.y);zoomAt((a.x+b.x)/2,(a.y+b.y)/2,start.s*d/start.pinch);moved=true;}
+      else if(ids.length===1&&start&&!start.pinch){var dx=e.clientX-start.x,dy=e.clientY-start.y;if(Math.abs(dx)+Math.abs(dy)>6)moved=true;if(z.s>1.01){z.x=start.zx+dx;z.y=start.zy+dy;applyZ();}}
+    });
+    function end(e){
+      var had=pts[e.pointerId];delete pts[e.pointerId];
+      if(!had||!start)return;
+      if(start.pinch){if(Object.keys(pts).length===0)start=null;return;}
+      var dx=e.clientX-start.x,dy=e.clientY-start.y;
+      if(z.s<=1.01&&Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)&&lbSet.length>1){lbShow(lbI+(dx<0?1:-1));start=null;return;}
+      if(!moved){var now=Date.now();if(now-lastTap<320){if(z.s>1.01){resetZ();}else{zoomAt(e.clientX,e.clientY,2.4);}lastTap=0;}else{lastTap=now;}}
+      start=null;
+    }
+    lbStage.addEventListener('pointerup',end);lbStage.addEventListener('pointercancel',end);
+    lbStage.addEventListener('wheel',function(e){e.preventDefault();zoomAt(e.clientX,e.clientY,z.s*(e.deltaY<0?1.15:1/1.15));},{passive:false});
+  })();
+
+  /* ---------- tracks ---------- */
+  function Track(el,items,opt){
+    var self=this;this.i=0;this.items=items;this.el=el;this.onChange=opt.onChange||function(){};
+    var mode=el.classList.contains('orbit')?'orbit':'flat';
+    var stage=document.createElement('div');stage.className='stage';
+    var wrap=document.createElement('div');wrap.className='slides';stage.appendChild(wrap);
+    var slides=items.map(function(it,idx){
+      var f=document.createElement('figure');f.className='slide'+(it.fit?' fit':'')+(it.lab?' haslab':'');
+      var fr=document.createElement('div');fr.className='frame';
+      var im=document.createElement('img');im.src=it.src;im.alt=it.t;im.loading=idx<3?'eager':'lazy';im.decoding='async';if(it.pos)im.style.objectPosition=it.pos;
+      fr.appendChild(im);if(it.lab){var lb_=document.createElement('div');lb_.className='lab';lb_.innerHTML='<b></b><span></span>';lb_.firstChild.textContent=it.lab[0];lb_.lastChild.textContent=it.lab[1];fr.appendChild(lb_);}f.appendChild(fr);
+      if(mode==='orbit'){var c=document.createElement('figcaption');var sm=document.createElement('small');sm.textContent=it.k;c.appendChild(sm);c.appendChild(document.createTextNode(it.t));f.appendChild(c);}
+      f.addEventListener('click',function(){if(self.dragged)return;if(idx===self.i)lbOpen(items,idx);else self.go(idx);});
+      wrap.appendChild(f);return f;
+    });
+    var ctrl=document.createElement('div');ctrl.className='ctrl';
+    var prev=document.createElement('button');prev.className='arrow';prev.type='button';prev.setAttribute('aria-label','Previous');prev.innerHTML=ARROW_L;
+    var next=document.createElement('button');next.className='arrow';next.type='button';next.setAttribute('aria-label','Next');next.innerHTML=ARROW_R;
+    var count=document.createElement('span');count.className='count';
+    ctrl.appendChild(prev);ctrl.appendChild(count);ctrl.appendChild(next);
+    el.appendChild(stage);el.appendChild(ctrl);
+    prev.addEventListener('click',function(){self.go(self.i-1)});
+    next.addEventListener('click',function(){self.go(self.i+1)});
+    el.tabIndex=0;el.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){self.go(self.i-1);e.preventDefault();}if(e.key==='ArrowRight'){self.go(self.i+1);e.preventDefault();}});
+    var W=0,H=0;
+    function size(){
+      var vw=stage.clientWidth||window.innerWidth;
+      var w=vw*(vw<600?Math.max(opt.w||.8,.9):(opt.w||.8));
+      var mvh=(opt.maxvh||.6)*window.innerHeight; var asp=opt.aspect||1.6;
+      if(w/asp>mvh)w=mvh*asp;
+      W=Math.round(Math.min(w,1500));H=Math.round(W/asp);
+      wrap.style.width=W+'px';wrap.style.height=H+'px';
+      self.render(true);
+    }
+    this.render=function(){
+      var n=slides.length;
+      slides.forEach(function(s,idx){
+        var d=idx-self.i; if(d>n/2)d-=n; if(d<-n/2)d+=n; // loop
+        var a=Math.abs(d),tf,op,fl='';
+        if(mode==='orbit'){
+          tf='translateX('+(d*W*0.62)+'px) translateZ('+(-a*220)+'px) rotateY('+(-d*34)+'deg)';
+          op=a>2?0:(a===0?1:a===1?.75:.35);fl=a?'saturate(.7) brightness(.95)':'';
+        }else{
+          tf='translateX('+(d*W*0.9)+'px) scale('+(a?0.84:1)+')';
+          op=a>1?0:(a?0.45:1);fl=a?'saturate(.5)':'';
+        }
+        s.style.transform=tf;s.style.opacity=op;s.style.filter=fl;s.style.zIndex=String(50-a);
+        s.style.pointerEvents=op===0?'none':'';
+        s.classList.toggle('is-on',a===0);s.setAttribute('aria-hidden',a===0?'false':'true');
+      });
+      count.textContent=String(self.i+1).padStart(2,'0')+' / '+String(n).padStart(2,'0');
+    };
+    this.go=function(i){var n=slides.length;self.i=(i+n)%n;self.render();self.onChange(self.i);};
+    // drag/swipe
+    var sx=null,sy=null,lock=null;
+    stage.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;sx=e.clientX;sy=e.clientY;lock=null;self.dragged=false;});
+    stage.addEventListener('pointermove',function(e){if(sx===null)return;var dx=e.clientX-sx,dy=e.clientY-sy;if(!lock&&Math.abs(dx)+Math.abs(dy)>8)lock=Math.abs(dx)>Math.abs(dy)?'x':'y';if(lock==='x'){self.dragged=true;wrap.style.transform='translateX('+dx*0.35+'px)';}});
+    function up(e){if(sx===null)return;var dx=e.clientX-sx;wrap.style.transform='';if(lock==='x'&&Math.abs(dx)>40){self.go(self.i+(dx<0?1:-1));}sx=null;setTimeout(function(){self.dragged=false},30);}
+    stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);stage.addEventListener('pointerleave',function(e){if(sx!==null)up(e);});
+    window.addEventListener('resize',size);size();
+  }
+  function cfg(el){return {w:parseFloat(el.dataset.w),maxvh:parseFloat(el.dataset.maxvh),aspect:parseFloat(el.dataset.aspect)};}
+  var galEl=$('[data-track="gal"]');new Track(galEl,GAL,cfg(galEl));
+
+  var planEl=$('[data-track="plan"]');
+  var pc=cfg(planEl);
+  pc.onChange=function(i){var p=PLANS[i];$('#pType').textContent=p.id;$('#pSize').textContent=p.size;$('#pUnits').textContent=p.units;$('#pNote').textContent='';$('#pNote').hidden=true;
+    $('#pSpecs').innerHTML=p.specs.map(function(s){return '<span>'+s[0]+s[1]+'</span>'}).join('');
+    $$('.ptab').forEach(function(b,j){b.setAttribute('aria-selected',j===i?'true':'false')});};
+  var planTrack=new Track(planEl,PLANS,pc);pc.onChange(0);
+  planEl.insertBefore($('#planInfo'),planEl.querySelector('.ctrl'));
+  $$('.ptab').forEach(function(b){b.addEventListener('click',function(){planTrack.go(+b.dataset.p)})});
+
+  function openOnKey(el,fn){el.addEventListener('click',fn);el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fn();}});}
+  var LAY=[{src:'img/lobby.jpg',t:'Lobby with Kumiko screen'},{src:'img/interior.jpg',t:'Interior inspired by Shoji screens'},{src:'img/kumiko.jpg',t:'Kumiko screens filtering sunlight'}];
+  $$('.layers figure').forEach(function(f,i){f.addEventListener('click',function(){lbOpen(LAY,i)})});
+  /* ---------- facade duo ---------- */
+  var DUO=[{src:'img/facade.jpg',t:'Kumiko-inspired facade'},{src:'img/aerial.jpg',t:'Aerial view at sunset'}];
+  $$('#duo figure').forEach(function(f){openOnKey(f,function(){lbOpen(DUO,+f.dataset.i)})});
+  (function(){var d=$('#duo'),dots=$$('.duo-dots span');d.addEventListener('scroll',function(){var i=d.scrollLeft>(d.scrollWidth-d.clientWidth)/2?1:0;dots.forEach(function(x,j){x.classList.toggle('on',j===i)})},{passive:true});})();
+
+  /* ---------- views ---------- */
+  var vImgs=$$('#vpic img'),vI=0;
+  var VSET=VIEWS.map(function(v,i){return {src:vImgs[i].getAttribute('src'),t:v.cap}});
+  function setView(i){vI=i;var v=VIEWS[i];vImgs.forEach(function(im,j){im.classList.toggle('on',j===i)});
+    $('#vdir').textContent=v.dir;$('#vtitle').textContent=v.t;$('#vtext').textContent=v.x;$('#vbadge').textContent=v.badge;
+    $('#vfaces').innerHTML='<span>Units facing this side:</span>'+v.f.map(function(t){return '<span>Type <b>'+t+'</b></span>'}).join('');
+    $$('.vtab').forEach(function(b,j){b.setAttribute('aria-selected',j===i?'true':'false')});}
+  $$('.vtab').forEach(function(b){b.addEventListener('click',function(){setView(+b.dataset.v)})});
+  setView(0);
+  openOnKey($('#vpic'),function(){lbOpen(VSET,vI)});
+  $('#keyplanBtn').addEventListener('click',function(){lbOpen([{src:'img/keyplan.jpg',t:'Typical floor key plan'}],0)});
+
+  /* ---------- facility plans + map ---------- */
+  var FSET=[{src:'img/l8plan.jpg',t:'Level 8 podium plan',fit:true,lab:['Level 8','Podium facilities']},{src:'img/l9plan.jpg',t:'Level 9 Elevated Zen Garden',fit:true,lab:['Level 9','Elevated Zen Garden']},{src:'img/keyplan.jpg',t:'Typical floor key plan',fit:true,lab:['Typical floor','Key plan']}];
+  var facEl=$('[data-track="fac"]');new Track(facEl,FSET,cfg(facEl));
+  openOnKey($('#mapFig'),function(){lbOpen([{src:'img/map.jpg',t:'Location map'}],0)});
+
+  /* ---------- distances ---------- */
+  function setDist(i){$('#dist').innerHTML=DIST[i].map(function(r){return '<li><span>'+r[0]+'</span><span>'+r[1]+'</span></li>'}).join('');
+    $$('.ltab').forEach(function(b,j){b.setAttribute('aria-selected',j===i?'true':'false')});}
+  $$('.ltab').forEach(function(b){b.addEventListener('click',function(){setDist(+b.dataset.l)})});setDist(0);
+
+  /* ---------- floating contact ---------- */
+  var fb=$('#fabBtn'),fm=$('#fabMenu');
+  fb.addEventListener('click',function(){var open=fm.hidden;fm.hidden=!open;fb.setAttribute('aria-expanded',open?'true':'false');$('#fabLabel').textContent=open?'Close':'Book a Viewing';});
+  document.addEventListener('click',function(e){if(!fm.hidden&&!$('#fab').contains(e.target)){fm.hidden=true;fb.setAttribute('aria-expanded','false');$('#fabLabel').textContent='Book a Viewing';}});
+
+  /* ---------- price list funnel: details first, then prices, then calendar ---------- */
+  (function(){
+    // Google Sheet web app URL (from Apps Script > Deploy > Web app). Leave empty to skip saving.
+    var LEADS_URL='https://script.google.com/macros/s/AKfycbw70YnmJRfQmL4CWbBmBycao7wUqXRoyfoBJwVLAJEVKVD12Ft9G0_pXtzeijSCGfjc/exec';
+    var CAL='https://calendar.app.google/xnnPdBDFLtufJ67g8';
+    var UNITS=[
+      {id:'A',size:'721 sq ft',rooms:'1 bed + study, 2 bath',price:'RM56X,XXX',mo:'RM1,9XX'},
+      {id:'B',size:'990 sq ft',rooms:'3 bed, 2 bath',price:'RM76X,XXX',mo:'RM2,6XX'},
+      {id:'C',size:'1,211 sq ft',rooms:'4 bed, 2 bath',price:'RM92X,XXX',mo:'RM3,2XX–3,4XX'},
+      {id:'D',size:'1,432 sq ft',rooms:'4 bed, 3 bath',price:'RM1,05X,XXX',mo:'RM3,7XX'},
+      {id:'E',size:'1,335 sq ft',rooms:'4 bed, 2 bath',price:'RM99X,XXX',mo:'RM3,5XX'}
+    ];
+    var INST=['Below RM2,000','RM2,000 – RM3,000','RM3,000 – RM4,000','Above RM4,000'];
+    var PURP=['Own stay','Investment','Both'];
+    var st={u:[],i:'',p:''},who={name:'',phone:'',email:''},leadId='';
+    var fn=$('#fn'),steps=[$('#fn2'),$('#fn1'),$('#fn3')],cur=0,opener=null;
+    function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
+    var uList=$('#uList');
+    UNITS.forEach(function(u){var b=el('button','u-opt');b.type='button';b.setAttribute('aria-pressed','false');
+      b.innerHTML='<b>'+u.id+'</b><span class="u-mid"><strong>Type '+u.id+' · '+u.size+'</strong><span>'+u.rooms+'</span></span><span class="u-price"><strong><i>From</i>'+u.price+'</strong><span>Est. '+u.mo+'/mo</span></span>';
+      b.addEventListener('click',function(){var k=st.u.indexOf(u.id);if(k<0)st.u.push(u.id);else st.u.splice(k,1);st.u.sort();b.setAttribute('aria-pressed',k<0?'true':'false');upd();});
+      uList.appendChild(b);});
+    function chips(box,list,key){list.forEach(function(t){var b=el('button','c-opt');b.type='button';b.textContent=t;b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){st[key]=t;$$('.c-opt',box).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});upd();});box.appendChild(b);});}
+    chips($('#iList'),INST,'i');chips($('#pList'),PURP,'p');
+    function types(){return st.u.length?st.u.map(function(x){return 'Type '+x}).join(', '):'';}
+    function msg(){var t='Hi Javenn, I’m '+(who.name||'interested')+'. I’d like the M Amaya price list.\nUnit type: '+(types()||'-')+'\nMonthly instalment: '+(st.i||'-')+'\nPurpose: '+(st.p||'-');return 'https://wa.me/601112322833?text='+encodeURIComponent(t);}
+    function upd(){var ok=st.u.length&&st.i&&st.p;$('#fnNext1').disabled=!ok;$('#fnHint1').hidden=!!ok;$('#fnWa1').href=msg();$('#fnWa3').href=msg();}
+    function send(stage){if(!LEADS_URL)return;var data={lead_id:leadId,stage:stage,name:who.name,phone:who.phone,email:who.email,unit_types:types(),monthly_instalment:st.i,purpose:st.p};
+      var body=Object.keys(data).map(function(k){return encodeURIComponent(k)+'='+encodeURIComponent(data[k]||'')}).join('&');
+      try{fetch(LEADS_URL,{method:'POST',mode:'no-cors',keepalive:true,headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).catch(function(){});}catch(x){}}
+    function show(n){cur=n;steps.forEach(function(s,j){s.hidden=j!==n});$('#fnBack').hidden=n===0;fn.scrollTop=0;var h=steps[n].querySelector('h2');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true});}}
+    function open(e){opener=e&&e.currentTarget||null;fn.hidden=false;document.documentElement.style.overflow='hidden';
+      if(!leadId)leadId=Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+      show(who.phone?1:0);upd();}
+    function close(){fn.hidden=true;document.documentElement.style.overflow='';if(opener&&opener.focus)opener.focus();}
+    $$('[data-funnel]').forEach(function(b){b.addEventListener('click',open)});
+    $('#fnClose').addEventListener('click',close);$('#fnDone').addEventListener('click',close);
+    $('#fnBack').addEventListener('click',function(){show(Math.max(0,cur-1))});
+    document.addEventListener('keydown',function(e){if(!fn.hidden&&e.key==='Escape')close();});
+    $$('#fnForm input').forEach(function(i){i.addEventListener('input',function(){$('#fnErr').hidden=true;});});
+    // step 1: details (saved straight away, so a lead is kept even if they stop at the prices)
+    $('#fnForm').addEventListener('submit',function(e){e.preventDefault();
+      var name=$('#fnName').value.trim(),phone=$('#fnPhone').value.trim(),email=$('#fnEmail').value.trim(),err=$('#fnErr');
+      if(!name){err.textContent='Please enter your name.';err.hidden=false;$('#fnName').focus();return;}
+      if(phone.replace(/\D/g,'').length<9){err.textContent='Please enter a phone number Javenn can WhatsApp, e.g. 012 345 6789.';err.hidden=false;$('#fnPhone').focus();return;}
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Please enter a valid email, e.g. name@gmail.com.';err.hidden=false;$('#fnEmail').focus();return;}
+      err.hidden=true;who={name:name,phone:phone,email:email};send('details');upd();show(1);
+    });
+    // step 2: picks -> save, open calendar, thank-you
+    $('#fnNext1').addEventListener('click',function(){
+      try{window.open(CAL,'_blank','noopener');}catch(x){}
+      send('picks');
+      $('#fnThanks').textContent='Thank you, '+who.name.split(' ')[0];
+      $('#fnSum').innerHTML='';[['Unit type',types()],['Monthly instalment',st.i],['Purpose',st.p],['Phone',who.phone]].forEach(function(r){var d=el('div');var dt=el('dt');dt.textContent=r[0];var dd=el('dd');dd.textContent=r[1];d.appendChild(dt);d.appendChild(dd);$('#fnSum').appendChild(d);});
+      upd();show(2);
+    });
+  })();
+
+  /* ---------- reveal, parallax, count-up ---------- */
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    $$('.rv').forEach(function(el){if(el.getBoundingClientRect().top>vh*0.92){el.classList.add('pre');io.observe(el);}});
+    var cio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;cio.unobserve(en.target);var el=en.target,to=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),small=el.querySelector('small'),sm=small?small.outerHTML:'',t0=null;
+      function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/1400),e=1-Math.pow(1-p,3);el.innerHTML=(to*e).toFixed(dec)+sm;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);})},{threshold:.6});
+    $$('[data-count]').forEach(function(el){if(el.getBoundingClientRect().top>vh*0.8)cio.observe(el);});
+    var par=$$('[data-par]'),heroImg=$('.hero-media'),ticking=false;
+    function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(function(){var h=window.innerHeight;
+      par.forEach(function(im){var r=im.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>h)return;var c=(r.top+r.height/2-h/2)/h;im.style.transform='scale(1.12) translateY('+(c*parseFloat(im.dataset.par)*-100)+'%)';});
+      var y=window.scrollY;if(y<h*1.2)heroImg.style.transform='translateY('+(y*0.28)+'px)';
+      ticking=false;});}
+    window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>
